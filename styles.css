@@ -1,0 +1,326 @@
+body {
+    margin: 30px;
+    padding-top: 100px;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+/* Nav Bar */
+
+#website_main_heading {
+    font-size: 30px;
+    color: #333;
+}
+
+#logo {
+    margin-right: 10px; 
+}
+
+nav {
+    background-color: #ffffff; 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; /* Distribute space between items */
+    padding: 10px 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+}
+
+.left_content {  /* logo + main heading */
+    display: flex; 
+    align-items: center; 
+}
+
+
+.navbar {
+    list-style-type: none; 
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; 
+    float: right;
+    margin-right: 8%;
+}
+
+.navbar li {
+    margin-right: 20px; /* Add spacing between list items */
+}
+
+.navbar li a {
+    text-decoration: none; 
+    color: #333;
+    font-weight: bold; 
+    font-size: 20px;
+}
+
+/* Recipes on top of the page */
+
+.recipes {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+    justify-content: space-around; /* Distribute space evenly between items */
+    align-items: center; /* Align items vertically */
+    font-size: small;
+}
+
+.recipes > div {
+    flex: 0 0 200px; /* Set a fixed width for each recipe card */
+    margin: 7px; /* Add margin for spacing between cards */
+    text-align: center; /* Center-align content */
+    flex-direction: column; /* Stack the image and text vertically */
+}
+
+.recipes > div img {
+    width: 200px; 
+    height: 150px; 
+    object-fit: cover; /* Maintain aspect ratio and cover the entire space */
+}
+
+.recipes > div h3 {
+    margin-top: 60px; 
+    font-size: 18px; 
+    width: 100%; /* Ensure text takes up full width */
+}
+
+.recipes > div p {
+    margin-top: 5px; 
+    font-size: 14px;
+    width: 100%; /* Ensure text takes up full width */
+}
+
+
+/* Newsletter Form */
+
+.newsletter_block {
+    background-color: #677a3a;
+    display: flex;
+    
+    align-items: center; /* Center-align content vertically */
+    width: 80%;
+    margin: 5% auto;
+}
+
+.newsletter_block img {
+    width: auto;
+    height: 450px;
+}
+
+.form_newsletter {
+    text-align:center;
+    color: #fff;
+    flex-grow: 1; /* Allow the form_newsletter div to grow and take up remaining space */
+}
+
+.form_newsletter p {
+
+    margin-right: 60px;
+    margin-left: 60px;
+    color: #fff;
+    line-height: 18px;
+ }
+
+ .form_newsletter h2 {
+
+    color:#fff;
+    font-size: 34px;
+    }
+
+ #second {   /* Second Paragraph */
+    margin-bottom: 20px;
+ }
+
+
+ .subscribe {
+    width: 500px;
+    margin-left: auto; /* Center-align content */
+    margin-right: auto; /* Center-align content */
+    text-align: center; /* Center-align content */
+    font-size: 18px;
+}
+
+.subscribe input[type="text"],
+.subscribe input[type="email"],
+.subscribe input[type="submit"] {
+    width: calc(100% - 24px); /* Adjust width to accommodate padding and border */
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.subscribe input[type="submit"] {
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+
+.subscribe input[type="submit"]:hover {
+    background-color: #3b4229;
+}
+
+/* About Section */
+
+
+.text_block {
+    padding: 20px; /* Add padding for spacing */
+    text-align: left;
+    width: 75%;
+    margin-left: 12.5%;
+}
+
+h2, h3, p {
+    color: #333;
+    margin-bottom: 10px; /* Add margin below heading */
+    line-height: 1.6;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.about p {
+    font-size: 16px; /* Set paragraph font size */
+    text-align: left;
+}
+
+/* Video Section */
+
+.video-container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+
+}
+
+.video-group {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    gap: 10px;
+    padding-bottom: 10px;
+}
+
+/* Chef Article */
+
+#chef_article {
+    color: #333;
+    font-weight: bold; 
+}
+
+/* Question Form */
+
+.contact_block {
+    background-color: #677a3a;
+    width: 100%;
+    
+}
+
+.contact_block h2 {
+    padding-top: 5%;
+    color:#fff;
+    font-size: 30px;
+
+}
+.question_form {
+    width: 500px; /* Adjust width as needed */
+    margin: 0 auto;
+    padding-bottom: 3%;
+    text-align: center;
+}
+
+.question_form input[type="text"],
+.question_form input[type="email"],
+.question_form textarea {
+    width: calc(100% - 22px); /* Adjust width to accommodate padding and border */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.question_form textarea {
+    resize: vertical; /* Allow vertical resizing */
+}
+
+.question_form input[type="submit"] {
+    width: 100%; /* Adjust width to accommodate padding and border */
+    padding: 12px;
+    border: none;
+    background-color: #000000;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.question_form input[type="submit"]:hover {
+    background-color: #3b4229;
+}
+
+.footer {
+    text-align: center;
+}
+
+
+/* Vegan Pho Page */
+
+#pho_recipe_name {
+    font-size: 30px;
+    color: #333;
+    text-align: center;
+}
+
+
+#ingredient_list {
+    font-size: 18px;
+    color: #333;
+}
+
+.pho_description {
+    display: flex;
+    padding: 25px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+}
+
+#text_pho {
+    display: inline-block;
+    font-size: 20px;
+    margin-bottom: 4%;
+    padding: 20px; /* Add padding for spacing */
+    text-align: left;
+    width: 60%;
+}
+
+.recipe_page_h2 {
+    margin-top: 3%;
+    text-align: left;
+    font-size: 32px;
+}
+
+.recipe_steps_title {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+    font-size: 26px;
+}
+
+.recipe_images {
+    width: 500px;
+    max-width: 50%;
+    height: auto;
+    display: block; /* Ensure the images are displayed as block elements */
+    margin: 0 auto; /* Center the images horizontally by setting auto margins */
+    height: auto;
+    margin-bottom: 5%;
+}
+
+#footer_pho_page {
+    margin-top: 5%;
+}
